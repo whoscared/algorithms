@@ -1,4 +1,4 @@
-package first_homework;
+package whoscared.yandex.first_homework;
 
 import java.io.*;
 
