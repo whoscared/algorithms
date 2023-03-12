@@ -1,4 +1,4 @@
-package heap_homework;
+package whoscared.yandex.heap_homework;
 
 public class MyHeapMax {
     private final int size = 100000;
