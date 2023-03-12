@@ -1,4 +1,4 @@
-package queue_homework;
+package whoscared.yandex.queue_homework;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class DrunkGame {
     public static void main(String[] args) throws IOException {
-        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\queue_homework\\input.txt");
+        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.queue_homework\\input.txt");
         BufferedReader br = new BufferedReader(fr);
         String first = br.readLine();
         String second = br.readLine();
@@ -16,7 +16,7 @@ public class DrunkGame {
 
         String result = whoWins(first, second);
 
-        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\queue_homework\\output.txt");
+        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.queue_homework\\output.txt");
         fw.write(result);
         fw.close();
     }

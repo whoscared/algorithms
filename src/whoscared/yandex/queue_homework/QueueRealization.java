@@ -1,4 +1,4 @@
-package queue_homework;
+package whoscared.yandex.queue_homework;
 
 
 import java.io.FileReader;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class QueueRealization {
     public static void main(String[] args) throws IOException {
-        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\queue_homework\\input.txt");
+        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.queue_homework\\input.txt");
         Scanner scanner = new Scanner(fr);
         StringBuilder sb = new StringBuilder();
         while (scanner.hasNext()) {
@@ -17,7 +17,7 @@ public class QueueRealization {
         fr.close();
         String[] commands = sb.toString().split("\n");
         String[] result = result(commands);
-        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\queue_homework\\output.txt");
+        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.queue_homework\\output.txt");
         for (String s : result){
             fw.write(s == null ? "" : s + "\n");
         }

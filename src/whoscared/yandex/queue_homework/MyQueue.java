@@ -1,4 +1,4 @@
-package queue_homework;
+package whoscared.yandex.queue_homework;
 
 public class MyQueue {
     private final int size = 200;
