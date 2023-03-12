@@ -1,14 +1,13 @@
-package stack_homework;
+package whoscared.yandex.stack_homework;
 
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.Stack;
 
 public class FirstStack {
     public static void main(String[] args) throws IOException {
-        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\stack_homework\\input.txt");
+        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.stack_homework\\input.txt");
         Scanner scanner = new Scanner(fr);
         StringBuilder sb = new StringBuilder();
         while (scanner.hasNext()) {
@@ -17,7 +16,7 @@ public class FirstStack {
         fr.close();
         String[] commands = sb.toString().split("\n");
         String[] result = result(commands);
-        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\stack_homework\\output.txt");
+        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.stack_homework\\output.txt");
         for (String s : result) {
             fw.write(s == null ? "" : s + "\n");
         }

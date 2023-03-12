@@ -1,4 +1,4 @@
-package stack_homework;
+package whoscared.yandex.stack_homework;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 
 public class LineLand {
     public static void main(String[] args) throws IOException {
-        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\stack_homework\\input.txt");
+        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.stack_homework\\input.txt");
         BufferedReader br = new BufferedReader(fr);
         int count = Integer.parseInt(br.readLine());
         int[] cities = new int[count];
@@ -22,7 +22,7 @@ public class LineLand {
 
         int[] result = relocation(cities);
 
-        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\stack_homework\\output.txt");
+        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.stack_homework\\output.txt");
         for (int cur : result) {
             fw.write(cur + " ");
         }
