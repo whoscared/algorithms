@@ -1,4 +1,4 @@
-package deque_homework;
+package whoscared.yandex.deque_homework;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -7,7 +7,7 @@ import java.util.*;
 
 public class MyDeque {
     public static void main(String[] args) throws IOException {
-        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\input_output\\input.txt");
+        FileReader fr = new FileReader("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.input_output\\input.txt");
         Scanner scanner = new Scanner(fr);
         StringBuilder sb = new StringBuilder();
         while (scanner.hasNext()) {
@@ -16,7 +16,7 @@ public class MyDeque {
         fr.close();
         String[] commands = sb.toString().split("\n");
         String[] result = result(commands);
-        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\input_output\\output.txt");
+        FileWriter fw = new FileWriter("D:\\reborn\\algorithms\\Yandex-Algorithms\\src\\whoscared.yandex.input_output\\output.txt");
         for (String s : result) {
             fw.write(s == null ? "" : s + "\n");
         }
